@@ -1,14 +1,9 @@
 [package]
-name = "physic_engine"
+name = "verlet_object"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-
-[dependencies.verlet_object]
-path = "./verlet_object"
-
-[dependencies.verlet_derive]
-path = "./verlet_derive"
+matrix = { git = "https://github.com/Baptistemontan/matrix" }
