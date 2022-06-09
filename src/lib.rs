@@ -1,5 +1,7 @@
 pub use verlet_derive;
 pub use verlet_object;
+pub use verlet_object::matrix;
+pub use verlet_object::soft_body;
 
 #[cfg(test)]
 mod tests {
