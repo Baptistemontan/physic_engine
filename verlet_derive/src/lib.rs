@@ -1,11 +1,8 @@
-use proc_macro::{Ident, TokenStream};
-use quote::{quote, ToTokens};
+use proc_macro::TokenStream;
+use quote::quote;
 use syn::{
-    parse::{self, Parser},
-    parse_macro_input, Attribute, Data, DeriveInput, Expr, GenericArgument, ItemStruct, Lit,
-    PathArguments, Type, TypePath,
+    parse_macro_input, Data, DeriveInput, Expr, GenericArgument, Lit, PathArguments, Type, TypePath,
 };
-use verlet_object::VerletObjectBase;
 
 enum VelvetGeneric {
     Num(usize),
